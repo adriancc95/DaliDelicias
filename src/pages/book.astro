@@ -1,0 +1,19 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Heading from "~/components/Heading.astro";
+import FormBook from "~/components/forms/FormBook.astro";
+---
+
+<Layout>
+	<Section>
+		<Heading>
+			<h2 slot="heading-title" class="font-black text-brand-green h2">Reserva una mesa</h2>
+			<p slot="heading-content" class="text-pretty">
+				Reserva una mesa para vivir esta experiencia.
+			</p>
+		</Heading>
+
+		<FormBook />
+	</Section>
+</Layout>

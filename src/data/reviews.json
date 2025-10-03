@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"author": "Jane Doe",
+		"review": "Muy rica la comida espectacular."
+	},
+	{
+		"id": 2,
+		"author": "John Smith",
+		"review": "Si en verdad mera!"
+	},
+	{
+		"id": 3,
+		"author": "Alice Johnson",
+		"review": "The pasta was perfectly cooked and the sauce was delicious. I highly recommend this restaurant."
+	},
+	{
+		"id": 4,
+		"author": "Bob Brown",
+		"review": "The pizza was fantastic! I will definitely be ordering from here again."
+	},
+	{
+		"id": 5,
+		"author": "Sarah Wilson",
+		"review": "Muy rico todo."
+	}
+]

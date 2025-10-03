@@ -1,0 +1,81 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/ButtonCallUs.astro";
+import Article from "~/components/Article.astro";
+
+// Images
+import PizzaHero from "~/assets/images/pizza-hero.png";
+---
+
+<Layout>
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+				<Badge title="il ristorante italiana" />
+				<h1 class="font-black">Real comida Casera con recetas caseras...</h1>
+
+				<p>
+					Experimenta la sensación de comer como en casa sin tener que cocinar. Disfruta de auténticos sabores colombianos
+					hechos con ingredientes frescos y amor.
+				</p>
+
+				<span class="text-brand-green font-medium">✔ We also deliver</span>
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/book">Reserva</Button>
+					<ButtonCallUs />
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={PizzaHero}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<Section class:list={'bg-white'}>
+		<Article>
+			<h2>Bienvenido a DaliDelicias</h2>
+			<p>
+				En el corazon de Envigado, <strong>DaliDelicias</strong> ofrece una autentica comida colombiana como ninguna otra que te hará sentir la experiencia de tu vida.
+			</p>
+
+			<h3>Our Story</h3>
+			<p>
+				Fundada en <em>2020</em>, durante la pandemia mi familia me motivó a crear esta experiencia para uds <u>de alto nivel culinario</u> cada plato cuenta una historia y cada bocado es una celebración de sabor
+			</p>
+
+			<h3>Nuestra Filosofia</h3>
+			<blockquote>"El ingrediente secreto siempre es: AMOR."</blockquote>
+			<p>
+				En DaliDelicias creemos que la simpleza de lo casero es la sustancia más importante del sabor. Y nos dedicamos a traer lo mejor de la cocina Colombiana a tu mesa con cada plato preparado con pasión y precisión para potenciar lo casero.
+			</p>
+
+			<h4>Que nos hace especiales?</h4>
+			<ul>
+				<li><strong>Autenticidad:</strong> Recetas tradicionales, tal como las de la abueta.</li>
+				<li><strong>Ingredientes Frescos:</strong> Apoyo a comercios locales y campesinos.</li>
+				<li><strong>Ambiente Casero:</strong> Un lugar donde te sentirás como en casa.</li>
+			</ul>
+
+			<h3>Unétenos</h3>
+			<p>
+				Asi sea que estés celebrando una ocasión especial o simplemente quieras una experiencia de sabor elevado, <strong
+					>DaliDelicias</strong
+				> es la solución perfecta para ti. <em>Ven por tu comida y compruebalo.</em>
+			</p>
+		</Article>
+	</Section>
+</Layout>
